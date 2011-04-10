@@ -79,3 +79,109 @@ Processing PagesController#contact (for 127.0.0.1 at 2011-04-05 23:04:54) [GET]
 Rendering template within layouts/application
 Rendering pages/contact
 Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-04-05 23:21:36) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+
+ActionView::TemplateError (stack level too deep) on line #5 of app/views/layouts/application.html.erb:
+2:   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+3: <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+4:   <head>
+5:     <title><%= title %></title>
+6:   </head>
+7:   <body>
+8:     <%= yield %>
+
+    app/helpers/application_helper.rb:8:in `title'
+    app/helpers/application_helper.rb:8:in `title'
+    app/views/layouts/application.html.erb:5
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.5ms)
+Rendered rescues/_request_and_response (5.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-04-05 23:22:47) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+
+ActionView::TemplateError (stack level too deep) on line #5 of app/views/layouts/application.html.erb:
+2:   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+3: <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+4:   <head>
+5:     <title><%= title %></title>
+6:   </head>
+7:   <body>
+8:     <%= yield %>
+
+    app/helpers/application_helper.rb:4:in `title'
+    app/helpers/application_helper.rb:8:in `title'
+    app/views/layouts/application.html.erb:5
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (138.2ms)
+Rendered rescues/_request_and_response (3.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-04-05 23:23:38) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-04-05 23:23:47) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 36ms (View: 27, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-04-05 23:23:50) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-04-05 23:44:23) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 45ms (View: 38, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-04-05 23:44:29) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-04-05 23:44:47) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-04-05 23:45:58) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/home]
